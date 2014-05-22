@@ -66,4 +66,35 @@ end
 
 
 
+# def fizzbuzz(number)
+#   response = ''
+#   response += 'fizz' if number % 3 == 0
+#   response += 'buzz' if number % 5 == 0
+#   return response if !response.empty?
+#   number
+# end
+ 
+# 1.upto(100) do |num|
+#   puts fizzbuzz(num)
+# end
+
+# secret_number = 8
+# def get_input
+# 	gets.chomp
+# end
+
+# puts "Welcome to the game, it's called the 'Secret Number Game'. My name is Mary Dorothy, nice to meet you"
+# puts 'What is your name?'
+# player = get_input
+# puts "Hi #{player}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
+
+# 	3.downto(1) do |guesses|
+# 	 puts 'Guess a number'
+# 	 guess = get_input.to_i
+# 		if guess == secret_number
+# 	 		puts "yes, you're right"
+# 	 		break
+# 		end
+# 	end
+
 
