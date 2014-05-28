@@ -24,6 +24,10 @@ def calculate_upvotes(story, category, upvotes)
 			abort 'try again, we don\'t like that'
 		end
 		return upvotes
+		# This is good! Do you know how you'd have to modify the code above if you wanted
+		# to apply multiple upvotes if the category contains multiple key words?
+		# i.e. category == "My cats love bacon"
+	
 		# If the Story is about bacon multiply the upvotes by 8
 		# If the Story is about Food it gets 3 times the upvotes.
 	#For example:
@@ -34,6 +38,6 @@ puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow
 puts "Please enter a News story:"
 story = get_input
 puts "Please give it a category:"
-category = get_input
+category = get_input # Will your program still work if the user enters "Cats" or "Bacon" ? Notice the capitalization
 upvotes = calculate_upvotes(story, category, upvotes)
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
