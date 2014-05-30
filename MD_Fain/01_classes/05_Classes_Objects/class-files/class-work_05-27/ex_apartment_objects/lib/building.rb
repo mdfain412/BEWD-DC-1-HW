@@ -6,10 +6,10 @@ class Building
 	def initialize(building_name, building_address)
 		@building_name = building_name
 		@building_address = building_address
-		@unit_rented = unit_rented
-		@sqft = Apartment.apt_sqft
-		@bedrooms = Apartment.apt_bedrooms
-		@bathrooms = Apartment.apt_bathrooms
+		# @unit_rented = unit_rented
+		# @sqft = sqft
+		# @bedrooms = Apartment.apt_bedrooms
+		# @bathrooms = Apartment.apt_bathrooms
 		@apartments = []
 
 	end
