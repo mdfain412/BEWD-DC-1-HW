@@ -36,7 +36,7 @@
 #
 ###############################################################################
 
-secret_number = 8
+secret_number = 8 # This secret number will be the same every time. To create a random number in ruby, check out rand() http://www.ruby-doc.org/core-2.1.2/Random.html#method-i-rand
 def get_input 
 	gets.chomp
 end
@@ -49,7 +49,7 @@ puts "Hi #{player}, The rules of the game are simple. You have to guess a number
 
 3.downto(1) do |guess|
 	puts 'Guess a number :) '
-	player_guess = get_input.to_i
+	player_guess = get_input.to_i # what happens if the user enters "banana"? You could enforce the rules
 
 	if player_guess == secret_number
 		puts "you're right, you're awesome!"
@@ -64,7 +64,11 @@ puts "Hi #{player}, The rules of the game are simple. You have to guess a number
 	end	
 end
 
+# this is good! If you wanted to give the player the option to play again after a game over, do you know
+# how you'd do that?
 
+
+# Please remove unused/commented/old code before submitting in the future.
 
 # def fizzbuzz(number)
 #   response = ''
