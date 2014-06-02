@@ -17,6 +17,19 @@
 # Main
 #	The main class is where the game begins. This class should tell the player who made it.
 #	Ask the player for their name and instantiate the Game class.
+
+author = 'Mary Dorothy'
+
+def get_input
+	gets.chomp
+end
+
+puts "Welcome to the game, my name is #{author} and I created the game"
+puts "what's your name?"
+player_name = get_input
+
+new_game = Game.new(player_name)
+
 #
 # SecretNumber
 #   This class should initiate an array of numbers that range between 1 - 10.
@@ -42,6 +55,10 @@
 
 $:.unshift (File.dirname(__FILE__))
 require 'lib/game'
+require 'lib/person'
+require 'lib/secret_number'
+
+
 
 # put code here print a welcome message for your user
 
