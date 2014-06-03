@@ -1,9 +1,25 @@
-require 'lib/person'
-require 'lib/secret_number'
-
 class Game
-# this class will be complex
-# we need to write logic to initialize a new game, and run the game loop
-# we'll want to write a few separate methods for unique tasks so that our
-# code is structured properly
+#		Welcome players and inform them of the game rules.
+
+# 		Prompt the user to choose a number, verify if the user guessed correctly.
+# 		If the user guesses incorrectly let them know if they were too high or too low
+#		Monitor how many guesses the player has before the game is over.
+
+	attr_accessor :secret_number
+
+
+#		Initialize the Player class.
+# 		Initialize the Secret Number class.
+
+	def initialize(player, secret_number)
+		@player = player
+		@secret_number = secret_number
+	end
+
+	def choose_a_number(secret_number)
+
+	end	
+
 end
+
+
