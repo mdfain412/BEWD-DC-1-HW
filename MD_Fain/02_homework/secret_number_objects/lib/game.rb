@@ -14,7 +14,7 @@ class Game
 #
 # In creating your game, make sure it has arrays, hashes and all functionality is wrapped in methods.
 
-	attr_accessor :secret_number, :person
+	attr_accessor :secret_number, :person, :player_guess
 
 
 #		Initialize the Player class.
@@ -28,6 +28,27 @@ class Game
 
 
 
+	def start_game
+		puts "the game has started"
+		while @guesses != 0
+			puts "guess"
+			@guesses -= 1
+			player_input
+		end
+		
+	end
+
+	def player_input
+		puts "what is your guess?"
+		@player_guess = gets.chomp
+	end
+
+			# puts "what is your guess?"
+			# player_guess = gets.chomp
+
+			# if player_guess != secret_number
+			# 	puts "you are wrong"
+			# end
 
 
 end

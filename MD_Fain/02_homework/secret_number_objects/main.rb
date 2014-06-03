@@ -32,16 +32,17 @@ author = 'Mary Dorothy'
 # end
 
 puts "Welcome to the game, my name is #{author} and I created the game"
-puts "what's your name?"
-name = gets.chomp.capitalize
-person = Person.new(name)
-puts "Hi #{name}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
+# puts "what's your name?"
+# name = gets.chomp.capitalize
+person = Person.new("MD")
+# puts "Hi #{name}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
 # puts name
 # secret_number = number.sample
 # puts "#{secret_number} is the secret number"
 
 
 new_game = Game.new(person)
+new_game.start_game
 
 # SecretNumber
 #   This class should initiate an array of numbers that range between 1 - 10.
