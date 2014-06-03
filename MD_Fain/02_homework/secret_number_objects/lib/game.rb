@@ -35,7 +35,6 @@ class Game
 			@guesses -= 1
 			player_input
 		end
-		
 	end
 
 	def player_input
