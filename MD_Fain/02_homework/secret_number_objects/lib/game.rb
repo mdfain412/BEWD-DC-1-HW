@@ -5,20 +5,18 @@ class Game
 # 		If the user guesses incorrectly let them know if they were too high or too low
 #		Monitor how many guesses the player has before the game is over.
 
-	attr_accessor :secret_number
+	attr_accessor :secret_number, :person
 
 
 #		Initialize the Player class.
 # 		Initialize the Secret Number class.
 
-	def initialize(player, secret_number)
-		@player = player
-		@secret_number = secret_number
+	def initialize(person, secret_number)
+		@person = person.name
+		@secret_number = SecretNumber.secret_number
 	end
 
-	def choose_a_number(secret_number)
 
-	end	
 
 end
 

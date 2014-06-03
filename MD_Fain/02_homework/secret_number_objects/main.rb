@@ -24,19 +24,24 @@ require 'lib/secret_number'
 #	Ask the player for their name and instantiate the Game class.
 
 author = 'Mary Dorothy'
-secret_number = rand(10)
+number = [1,2,3,4,5,6,7,8,9,10]
+# guesses_left = 3
 
-def get_input
-	gets.chomp
-end
+# def get_input(player_name)
+# 	gets.chomp.capitalize
+# end
 
 puts "Welcome to the game, my name is #{author} and I created the game"
 puts "what's your name?"
-player_name = get_input
+name = gets.chomp.capitalize
+person = Person.new(name)
+puts "Hi #{name}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
+# puts name
+secret_number = number.sample
+puts "#{secret_number} is the secret number"
 
-new_game = Game.new(player_name)
+# new_game = Game.new
 
-#
 # SecretNumber
 #   This class should initiate an array of numbers that range between 1 - 10.
 #   Use a method from the array class to select a random element from that array. This random number will be the secret number.
