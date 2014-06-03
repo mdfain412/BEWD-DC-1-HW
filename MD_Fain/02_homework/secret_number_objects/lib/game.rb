@@ -20,9 +20,10 @@ class Game
 #		Initialize the Player class.
 # 		Initialize the Secret Number class.
 
-	def initialize(person, secret_number)
+	def initialize(person, secret_number, guesses)
 		@person = person.name
-		@secret_number = SecretNumber.secret_number
+		@secret_number = SecretNumber.new
+		@guesses = guesses
 	end
 
 
