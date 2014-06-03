@@ -9,8 +9,8 @@ class SecretNumber
 
 	attr_accessor :secret_number, :number
 
-	def initialize(secret_number, number)
-		@number = number[1,2,3,4,5,6,7,8,9,10]
+	def initialize
+		@number = [1,2,3,4,5,6,7,8,9,10]
 		@secret_number = number.sample
 	end
 
