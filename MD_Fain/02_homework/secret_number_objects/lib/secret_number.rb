@@ -14,5 +14,4 @@ class SecretNumber
 		@secret_number = number.sample
 	end
 
-
 end
