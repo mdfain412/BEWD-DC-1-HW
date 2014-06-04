@@ -1,3 +1,5 @@
+
+
 class Game
 #		Welcome players and inform them of the game rules.
 
@@ -14,7 +16,7 @@ class Game
 #
 # In creating your game, make sure it has arrays, hashes and all functionality is wrapped in methods.
 
-	attr_accessor :secret_number, :person, :player_guess
+	attr_accessor :secret_number, :person, :player_guess, :guesses
 
 
 #		Initialize the Player class.
@@ -35,11 +37,28 @@ class Game
 			@guesses -= 1
 			player_input
 		end
+		
 	end
 
 	def player_input
 		puts "what is your guess?"
-		@player_guess = gets.chomp
+		@player_guess = gets.chomp.to_i
+		evaluate(@player_guess)
+	end
+
+	def evaluate(player_guess)
+		if player_guess == secret_number
+			puts "you're right, you're awesome!"
+		elsif player_guess != secret_number && guesses > 0
+
+			if player_guess < @secret_number
+        		puts "Higher, you have #{guesses} guesses left"
+      		elsif player_guess > @secret_number
+        		puts "Lower, you have #{guesses} guesses left"
+      		end
+      	else
+      		puts "Game Over! The secret number was #{@secret_number}"
+		end	
 	end
 
 			# puts "what is your guess?"
