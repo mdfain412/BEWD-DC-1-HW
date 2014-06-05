@@ -27,18 +27,15 @@ author = 'Mary Dorothy'
 
 # guesses = 3
 
-# def get_input(player_name)
-# 	gets.chomp.capitalize
-# end
+def get_input(player_name)
+	gets.chomp.capitalize
+end
 
 puts "Welcome to the game, my name is #{author} and I created the game"
-# puts "what's your name?"
-# name = gets.chomp.capitalize
+puts "what's your name?"
+name = gets.chomp.capitalize
 person = Person.new("MD")
-# puts "Hi #{name}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
-# puts name
-# secret_number = number.sample
-# puts "#{secret_number} is the secret number"
+puts "Hi #{name}, The rules of the game are simple. You have to guess a number between 1 and 10 and you only have three guesses."
 
 
 new_game = Game.new(person)
