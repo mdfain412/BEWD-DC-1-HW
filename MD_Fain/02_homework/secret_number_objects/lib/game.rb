@@ -49,16 +49,9 @@ class Game
 	def evaluate(player_guess)
 		if player_guess == secret_number
 			puts "you're right, you're awesome!"
-		elsif player_guess != secret_number && guesses > 0
+		end
+		puts secret_number
 
-			if player_guess < @secret_number
-        		puts "Higher, you have #{guesses} guesses left"
-      		elsif player_guess > @secret_number
-        		puts "Lower, you have #{guesses} guesses left"
-      		end
-      	else
-      		puts "Game Over! The secret number was #{@secret_number}"
-		end	
 	end
 
 			# puts "what is your guess?"
